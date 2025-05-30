@@ -8,6 +8,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function AboutPage() {
     const values = [
@@ -91,11 +92,12 @@ export default function AboutPage() {
                                 vision needs.
                             </p>
                         </div>
-                        <div className="relative">
-                            <img
-                                src="/placeholder.svg?height=400&width=600"
+                        <div className="relative w-full h-72">
+                            <Image
+                                src="/images/clinic-exterior.jpg"
                                 alt="Om Eye Clinic building exterior"
-                                className="rounded-lg shadow-lg w-full"
+                                fill
+                                className="rounded-lg shadow-lg object-cover"
                             />
                         </div>
                     </div>
@@ -186,11 +188,14 @@ export default function AboutPage() {
                         <div className="flex justify-center">
                             <Card className="w-full md:w-2/3 lg:w-1/2 border border-blue-100 shadow-lg hover:shadow-xl transition-shadow">
                                 <CardHeader className="text-center">
-                                    <img
-                                        src="/placeholder.svg?height=300&width=300"
-                                        alt="Dr. Ajay Kumar Bhardwaj"
-                                        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                                    />
+                                    <div className="relative w-32 h-32 mx-auto mb-4">
+                                        <Image
+                                            src="/images/dr-ajay.jpg"
+                                            alt="Dr. Ajay Kumar Bhardwaj"
+                                            fill
+                                            className="rounded-full object-cover"
+                                        />
+                                    </div>
                                     <CardTitle className="text-xl text-blue-900">
                                         Dr. Ajay Kumar Bhardwaj
                                     </CardTitle>

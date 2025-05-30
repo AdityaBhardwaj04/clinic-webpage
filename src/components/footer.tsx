@@ -1,8 +1,7 @@
-// src/components/footer.tsx
-
 "use client";
 
 import { Eye } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
     const year = new Date().getFullYear();
@@ -29,36 +28,36 @@ export default function Footer() {
                         </h3>
                         <ul className="space-y-2">
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/services"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     Services
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/doctors"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     Our Doctors
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/about"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     About Us
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -66,36 +65,36 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Services</h3>
                         <ul className="space-y-2">
                             <li>
-                                <a
+                                <Link
                                     href="/services#examinations"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     Eye Examinations
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/services#glasses"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     Prescription Glasses
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/services#cataract"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     Cataract Surgery
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/services#glaucoma"
                                     className="text-blue-200 hover:text-white"
                                 >
                                     Glaucoma Treatment
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
