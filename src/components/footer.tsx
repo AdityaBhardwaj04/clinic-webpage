@@ -103,10 +103,10 @@ export default function Footer() {
                             Contact Us
                         </h3>
                         <address className="not-italic text-blue-200">
-                            <p>123 Eye Care Street</p>
-                            <p>Medical District, City</p>
-                            <p className="mt-2">Phone: (123) 456-7890</p>
-                            <p>Email: info@omeyeclinic.com</p>
+                            <p>Om Eye Clinic & Phaco Centre</p>
+                            <p>MIGH-305, Lohia Nagar, Kankarbagh, Patna</p>
+                            <p className="mt-2">Phone: 9431421087</p>
+                            {/* <p>Email: info@omeyeclinic.com</p> */}
                         </address>
                     </div>
                 </div>
